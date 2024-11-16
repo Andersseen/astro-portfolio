@@ -24,6 +24,17 @@
       "databases": "Database Systems",
       "devops": "DevOps & Cloud",
       "tools": "Tools & Architecture"
+    },
+    "details": {
+      "backend": [
+        "API Development in .NET Core 8 with Swagger",
+        "Unit Testing with Docker in .NET Core",
+        "Desktop Application Development and Integration"
+      ],
+      "devops": [
+        "Deployment on Microsoft and Linux servers",
+        "Version Control with Git"
+      ]
     }
   },
   "contact": {

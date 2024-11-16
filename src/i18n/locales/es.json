@@ -1,37 +1,48 @@
 {
   "nav": {
     "home": "Inicio",
-    "about": "Sobre Mí",
+    "about": "Acerca de",
     "skills": "Habilidades",
     "contact": "Contacto"
   },
   "home": {
     "title1": "Bienvenido a",
-    "title2": "Mi Portfolio",
+    "title2": "Mi Portafolio",
     "role1": "Desarrollador Backend",
     "role2": "Desarrollador de Software"
   },
   "about": {
-    "text1": "¡Hola! Soy un desarrollador backend apasionado",
+    "text1": "¡Hola! Soy un apasionado desarrollador backend",
     "text2": "Me encanta crear sistemas robustos y escalables",
-    "text3": "Trabajemos juntos para dar vida a tus ideas"
+    "text3": "Trabajemos juntos para llevar tus ideas a la vida"
   },
   "skills": {
-    "title": "Stack Tecnológico",
-    "subtitle": "Especialización en Desarrollo Backend",
+    "title": "Stack Técnico",
+    "subtitle": "Experiencia en Desarrollo Backend",
     "categories": {
       "backend": "Tecnologías Backend",
-      "databases": "Sistemas de Bases de Datos",
-      "devops": "DevOps y Cloud",
-      "tools": "Herramientas y Arquitectura"
+      "databases": "Sistemas de Base de Datos",
+      "devops": "DevOps & Nube",
+      "tools": "Herramientas & Arquitectura"
+    },
+    "details": {
+      "backend": [
+        "Desarrollo de APIs en .NET Core 8 con Swagger",
+        "Pruebas Unitarias con Docker en .NET Core",
+        "Desarrollo e Integración de Aplicaciones de Escritorio"
+      ],
+      "devops": [
+        "Despliegue en servidores Microsoft y Linux",
+        "Control de versiones con Git"
+      ]
     }
   },
   "contact": {
-    "title": "Contacto",
+    "title": "Ponte en Contacto",
     "subtitle": "Contáctame",
-    "available": "Disponible para proyectos freelance",
+    "available": "Disponible para trabajo freelance",
     "footer": {
-      "design": "Diseñado y Desarrollado por",
+      "design": "Diseñado & Construido por",
       "rights": "Todos los derechos reservados"
     }
   }
