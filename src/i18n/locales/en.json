@@ -1,0 +1,38 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "contact": "Contact"
+  },
+  "home": {
+    "title1": "Welcome to",
+    "title2": "My Portfolio",
+    "role1": "Backend Developer",
+    "role2": "Software Architect"
+  },
+  "about": {
+    "text1": "Hello! I'm a passionate backend developer",
+    "text2": "I love creating robust and scalable systems",
+    "text3": "Let's work together to bring your ideas to life"
+  },
+  "skills": {
+    "title": "Technical Stack",
+    "subtitle": "Backend Development Expertise",
+    "categories": {
+      "backend": "Backend Technologies",
+      "databases": "Database Systems",
+      "devops": "DevOps & Cloud",
+      "tools": "Tools & Architecture"
+    }
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "Contact Me",
+    "available": "Available for freelance work",
+    "footer": {
+      "design": "Designed & Built by",
+      "rights": "© 2024 All rights reserved"
+    }
+  }
+}
