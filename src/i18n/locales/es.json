@@ -9,7 +9,7 @@
     "title1": "Bienvenido a",
     "title2": "Mi Portfolio",
     "role1": "Desarrollador Backend",
-    "role2": "Arquitecto de Software"
+    "role2": "Desarrollador de Software"
   },
   "about": {
     "text1": "¡Hola! Soy un desarrollador backend apasionado",
@@ -32,7 +32,7 @@
     "available": "Disponible para proyectos freelance",
     "footer": {
       "design": "Diseñado y Desarrollado por",
-      "rights": "© 2024 Todos los derechos reservados"
+      "rights": "Todos los derechos reservados"
     }
   }
 }

@@ -36,6 +36,8 @@ export default function Portfolio() {
     }
   };
 
+  const year = new Date().getFullYear();
+
   return (
     <div className="h-screen w-screen overflow-hidden">
       <nav className="fixed top-0 left-0 w-full z-50 p-4 bg-primary/80 backdrop-blur-sm">
@@ -99,7 +101,7 @@ export default function Portfolio() {
               </h3>
               <div className="mt-16">
                 <h1 className="font-sixcaps text-8xl md:text-[15rem] text-secondary animate-scale">
-                  Your Name
+                  Yevhen Letin
                 </h1>
                 <div className="flex justify-center items-center space-x-4 text-xl md:text-3xl text-secondary">
                   <span className="animate-fade-left">{t("home.role1")}</span>
@@ -116,7 +118,7 @@ export default function Portfolio() {
             <div className="grid md:grid-cols-2 gap-12 max-w-6xl">
               <div className="flex items-center justify-center">
                 <img
-                  src="/profile.jpg"
+                  src="/myFoto.webp"
                   alt="Profile"
                   className="rounded-full w-64 h-64 object-cover border-4 border-secondary"
                 />
@@ -171,13 +173,15 @@ export default function Portfolio() {
               <div className="flex justify-between items-end">
                 <div className="text-secondary">
                   <p>{t("contact.footer.design")}</p>
-                  <p className="text-lg">{t("contact.footer.rights")}</p>
+                  <p className="text-lg">
+                    © {year} {t("contact.footer.rights")}
+                  </p>
                 </div>
                 <div className="flex space-x-8">
                   {[
                     ["linkedin", "https://linkedin.com"],
                     ["github", "https://github.com"],
-                    ["facebook", "https://facebook.com"],
+                    ["gitlab", "https://facebook.com"],
                   ].map(([icon, url]) => (
                     <a
                       key={icon}
