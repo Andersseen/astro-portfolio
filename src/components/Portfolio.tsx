@@ -1,40 +1,58 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Mousewheel, Keyboard } from 'swiper/modules';
 import { useTranslation } from 'react-i18next';
 import { SkillCard } from './SkillCard';
 import { skillsData } from '../data/skills';
+import '../i18n/i18n.config';
 import 'swiper/css';
 import 'swiper/css/pagination';
+
+const languages = [
+  { code: 'en', name: 'English', flag: '🇬🇧' },
+  { code: 'es', name: 'Español', flag: '🇪🇸' },
+  { code: 'uk', name: 'Українська', flag: '🇺🇦' }
+];
 
 export default function Portfolio() {
   const { t, i18n } = useTranslation();
 
+  useEffect(() => {
+    const savedLang = localStorage.getItem('preferred-lang');
+    if (savedLang && languages.some(lang => lang.code === savedLang)) {
+      void i18n.changeLanguage(savedLang);
+    }
+  }, []);
+
   const changeLanguage = (lng: string) => {
-    i18n.changeLanguage(lng);
+    void i18n.changeLanguage(lng);
+    localStorage.setItem('preferred-lang', lng);
   };
 
   return (
     <div className="h-screen w-screen overflow-hidden">
-      <nav className="fixed top-0 left-0 w-full z-50 p-4">
+      <nav className="fixed top-0 left-0 w-full z-50 p-4 bg-primary/80 backdrop-blur-sm">
         <div className="container mx-auto flex justify-between items-center">
-          <div className="space-x-4">
-            {['en', 'es'].map((lang) => (
+          <div className="flex space-x-2">
+            {languages.map(({ code, name, flag }) => (
               <button
-                key={lang}
-                onClick={() => changeLanguage(lang)}
-                className={`text-secondary px-2 py-1 rounded ${
-                  i18n.language === lang ? 'bg-secondary/20' : ''
+                key={code}
+                onClick={() => changeLanguage(code)}
+                className={`flex items-center space-x-2 px-3 py-2 rounded-lg transition-all duration-300 ${
+                  i18n.language === code 
+                    ? 'bg-secondary/20 text-secondary' 
+                    : 'text-secondary/60 hover:text-secondary hover:bg-secondary/10'
                 }`}
               >
-                {lang.toUpperCase()}
+                <span className="text-lg">{flag}</span>
+                <span className="hidden md:inline">{name}</span>
               </button>
             ))}
           </div>
           <ul className="hidden md:flex space-x-8">
             {['home', 'about', 'skills', 'contact'].map((item) => (
               <li key={item}>
-                <button className="text-secondary hover:text-secondary/80">
+                <button className="text-secondary hover:text-secondary/80 transition-colors">
                   {t(`nav.${item}`)}
                 </button>
               </li>
