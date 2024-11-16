@@ -9,7 +9,7 @@
     "title1": "Welcome to",
     "title2": "My Portfolio",
     "role1": "Backend Developer",
-    "role2": "Software Architect"
+    "role2": "Software Developer"
   },
   "about": {
     "text1": "Hello! I'm a passionate backend developer",
@@ -24,6 +24,17 @@
       "databases": "Database Systems",
       "devops": "DevOps & Cloud",
       "tools": "Tools & Architecture"
+    },
+    "details": {
+      "backend": [
+        "API Development in .NET Core 8 with Swagger",
+        "Unit Testing with Docker in .NET Core",
+        "Desktop Application Development and Integration"
+      ],
+      "devops": [
+        "Deployment on Microsoft and Linux servers",
+        "Version Control with Git"
+      ]
     }
   },
   "contact": {
@@ -32,7 +43,7 @@
     "available": "Available for freelance work",
     "footer": {
       "design": "Designed & Built by",
-      "rights": "© 2024 All rights reserved"
+      "rights": "All rights reserved"
     }
   }
 }
