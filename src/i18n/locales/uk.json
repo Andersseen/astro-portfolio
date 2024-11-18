@@ -18,23 +18,12 @@
   },
   "skills": {
     "title": "Технічний стек",
-    "subtitle": "Експертиза у розробці Backend",
-    "categories": {
-      "backend": "Технології Backend",
-      "databases": "Системи баз даних",
-      "devops": "DevOps & Хмара",
-      "tools": "Інструменти & Архітектура"
-    },
     "details": {
-      "backend": [
-        "Розробка API в .NET Core 8 з Swagger",
-        "Unit-тестування з Docker в .NET Core",
-        "Розробка та інтеграція настільних додатків"
-      ],
-      "devops": [
-        "Розгортання на серверах Microsoft і Linux",
-        "Контроль версій з Git"
-      ]
+      "desktop": "Розробка та інтеграція настільних додатків",
+      "git": "Контроль версій з Git",
+      "serverDeployment": "Розгортання на серверах Microsoft і Linux",
+      "apiDevelopment": "Розробка API в .NET Core 8 з Swagger",
+      "unitTesting": "Unit-тестування з Docker в .NET Core"
     }
   },
   "contact": {
