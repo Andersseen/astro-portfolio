@@ -16,27 +16,18 @@
     "text2": "Me encanta crear sistemas robustos y escalables",
     "text3": "Trabajemos juntos para llevar tus ideas a la vida"
   },
+
   "skills": {
     "title": "Stack Técnico",
-    "subtitle": "Experiencia en Desarrollo Backend",
-    "categories": {
-      "backend": "Tecnologías Backend",
-      "databases": "Sistemas de Base de Datos",
-      "devops": "DevOps & Nube",
-      "tools": "Herramientas & Arquitectura"
-    },
     "details": {
-      "backend": [
-        "Desarrollo de APIs en .NET Core 8 con Swagger",
-        "Pruebas Unitarias con Docker en .NET Core",
-        "Desarrollo e Integración de Aplicaciones de Escritorio"
-      ],
-      "devops": [
-        "Despliegue en servidores Microsoft y Linux",
-        "Control de versiones con Git"
-      ]
+      "desktop": "Desarrollo e integración de aplicación de escritorio",
+      "git": "Control de versiones en Git",
+      "serverDeployment": "Despliegue en servidores con sistemas Microsoft y Linux",
+      "apiDevelopment": "APIs en .NET Core 8 con Swagger",
+      "unitTesting": "UnitTest con Docker en .NET Core"
     }
   },
+
   "contact": {
     "title": "Ponte en Contacto",
     "subtitle": "Contáctame",

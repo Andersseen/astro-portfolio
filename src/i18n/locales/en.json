@@ -18,23 +18,12 @@
   },
   "skills": {
     "title": "Technical Stack",
-    "subtitle": "Backend Development Expertise",
-    "categories": {
-      "backend": "Backend Technologies",
-      "databases": "Database Systems",
-      "devops": "DevOps & Cloud",
-      "tools": "Tools & Architecture"
-    },
     "details": {
-      "backend": [
-        "API Development in .NET Core 8 with Swagger",
-        "Unit Testing with Docker in .NET Core",
-        "Desktop Application Development and Integration"
-      ],
-      "devops": [
-        "Deployment on Microsoft and Linux servers",
-        "Version Control with Git"
-      ]
+      "desktop": "Desktop Application Development and Integration",
+      "git": "Version Control with Git",
+      "serverDeployment": "Deployment on Microsoft and Linux servers",
+      "apiDevelopment": "API Development in .NET Core 8 with Swagger",
+      "unitTesting": "Unit Testing with Docker in .NET Core"
     }
   },
   "contact": {
