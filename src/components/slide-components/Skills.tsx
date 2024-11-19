@@ -40,21 +40,21 @@ const Skills = ({ t }) => {
   return (
     <section className="w-full min-h-screen py-16 px-4 flex items-center">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-12 text-gray-800 dark:text-gray-100">
+        <h2 className="text-3xl font-bold text-center mb-12 text-secondary">
           {t("skills.title")}
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-2 lg:gap-8">
           {skills.map((skill, index) => (
             <Card
               key={index}
-              className={`${skill.gridClass} overflow-hidden transition-all duration-300 ease-in-out 
+              className={`${skill.gridClass} soverflow-hidden transition-all duration-300 ease-in-out 
                 shadow-[1px_1px_2px_#0e0702,-1px_-1px_2px_#fcefde8b] 
                 hover:shadow-[inset_1px_1px_2px_#0e0702,inset_-1px_-1px_2px_#fcefde8b] 
                 rounded-xl border-none`}
             >
-              <CardContent className="p-6 flex flex-col items-center justify-center h-full text-center">
+              <CardContent className="p-2 lg:p-6 flex flex-col items-center justify-center h-full text-center">
                 <div
-                  className="rounded-full p-4 mb-4 
+                  className="rounded-full p-1 mb-1 lg:p-4 lg:mb-4 
                 shadow-[inset_3px_3px_6px_#1c1c1c,inset_-3px_-3px_6px_#2c2c2c]"
                 >
                   {React.cloneElement(skill.icon, {
