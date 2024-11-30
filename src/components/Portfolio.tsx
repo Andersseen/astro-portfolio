@@ -114,9 +114,9 @@ export default function Portfolio() {
                 </div>
                 <div className="flex space-x-8">
                   {[
-                    ["linkedin", "https://linkedin.com"],
-                    ["github", "https://github.com"],
-                    ["gitlab", "https://facebook.com"],
+                    ["linkedin", "https://www.linkedin.com/in/yevhenletin"],
+                    ["github", "https://github.com/yevgenletin"],
+                    ["gitlab", "https://gitlab.com/yevgenletin"],
                   ].map(([icon, url]) => (
                     <a
                       key={icon}
